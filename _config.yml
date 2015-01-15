@@ -1,0 +1,12 @@
+# Site settings
+title: szunyog.github.io
+#email: szunyog@gmail.com
+description: ""
+baseurl: ""
+url: "http://szunyog.github.io"
+#twitter_username: jekyllrb
+github_username: szunyog
+
+# Build settings
+markdown: kramdown
+permalink: pretty
