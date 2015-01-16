@@ -2,7 +2,8 @@
 layout: post
 title:  "Minimal XSD documentation generator"
 date:   2015-01-15 20:31:49
-categories: blogging
+categories: xml
+tags: [xml, xsd]
 ---
 
 This is a simple XSLT to produce a HTML documentation of an XSD file.

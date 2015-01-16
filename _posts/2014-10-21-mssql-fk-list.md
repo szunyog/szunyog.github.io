@@ -2,8 +2,8 @@
 layout: post
 title:  "MS SQL list foreign keys"
 date:   2014-10-21 20:31:49
-categories: scripts
-tags: [sql]
+categories: sql
+tags: [mssql]
 ---
 
 Sometime it is usefull, to list all the foreign keys of a database, the following script does it:

@@ -2,8 +2,8 @@
 layout: post
 title:  "MS SQL kill all other connections by database"
 date:   2014-10-22 20:31:49
-categories: scripts
-tags: [sql]
+categories: sql
+tags: [mssql]
 ---
 
 The first trivial solution is to switch the database to single user mode. It can be done by the following command:
