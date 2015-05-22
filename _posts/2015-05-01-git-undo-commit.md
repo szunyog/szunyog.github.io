@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Undo a commit and redo"
+title:  "Git undo a commit and redo"
 date:   2015-05-01 10:31:49
 categories: git
 ---
