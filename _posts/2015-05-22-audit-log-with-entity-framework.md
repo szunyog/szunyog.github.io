@@ -141,4 +141,4 @@ public void AfterSaveChanges(DataContext context)
 
 The full project can be found in my [EntityFameworkAudit][repo-url] repository.
 
-[repoy-url]: https://github.com/szunyog/EntityFameworkAudit
+[repo-url]: https://github.com/szunyog/EntityFameworkAudit
