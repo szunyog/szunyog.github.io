@@ -22,9 +22,16 @@ The .Net side data structure is the following:
 
 public class CurveData
 {
-    public int CurveId { get; set; }
+    public CurveType CurveId { get; set; }
     public DateTime TimeStamp { get; set; }
     public Decimal Value { get; set; }
+}
+
+public enum CurveType
+{
+    Type1,
+    Type2,
+    TypeN
 }
 
 {% endhighlight %}
@@ -52,7 +59,7 @@ The primary key and the clustered index is the CurveId and TimeStamp field.
 
 ### Test 1: Constructed SQL statement without paramters
 
-In this case the whole sql statement is constructed in c# code, including the values so the SQL server will not have chance to use cached version of the complied sql statement.
+In this case the whole SQL statement is constructed in c# code, including the values so the SQL server will not have chance to use cached version of the complied SQL statement.
 
 {% highlight csharp %}
 
@@ -84,7 +91,7 @@ public void InsertOneConcatenatedSqlTest(List<CurveData> data)
 
 ### Test 2: Constructed SQL statement with paramters
 
-In this case the whole sql statement is constructed in c# code, but the values are passed as paramters so the SQL server will have a chance to use cached version of the complied sql statement.
+In this case the whole SQL statement is constructed in c# code, but the values are passed as parameters so the SQL server will have a chance to use cached version of the compiled SQL statement.
 
 {% highlight csharp %}
 
@@ -127,7 +134,7 @@ public void ConstructedSQLWithParamters(List<CurveData> data)
 
 ### Test 3: Constructed SQL statement with multiple values
 
-In this case the whole sql statement is constructed in c# code, but multiple values are used in one statement. In this case the SQL server cannot use cached queries, but the number of the sql operations could be decreased. In this test 100 items per sql statement is used.
+In this case the whole SQL statement is constructed in c# code, but multiple values are used in one statement. In this case the SQL server cannot use cached queries, but the number of the SQL operations could be decreased. In this test 100 items per SQL statement is used.
 
 {% highlight csharp %}
 
@@ -229,7 +236,7 @@ public void StoredProcedure(List<CurveData> data)
 }
 {% endhighlight %}
 
-The source of the stoed procedure is quite simple:
+The source of the stored procedure is quite simple:
 
 {% highlight SQL %}
 
@@ -254,7 +261,7 @@ GO
 
 ### Test 5: Stored procedure with structured paramter
 
-From the version of 2008 the Microsoft SQL server support structured parameter. With this method it is possible to pass a structured list as a paramter to a stored procedure. It has a limitation that the parameter type must be  `DataTable`, `DbDataReader` or `System.Collections.Generic.IEnumerable<SqlDataRecord>`
+From the version of 2008 the Microsoft SQL server support structured parameter. With this method it is possible to pass a structured list as a parameter to a stored procedure. It has a limitation that the parameter type must be  `DataTable`, `DbDataReader` or `System.Collections.Generic.IEnumerable<SqlDataRecord>`
 
 In this case you need to define a custom data type in the SQL side:
 
@@ -271,7 +278,7 @@ AS TABLE
 GO
 {% endhighlight %}
 
-And a stored procedure with this type of paramter:
+And a stored procedure with this type of parameter:
 
 {% highlight SQL %}
 
@@ -374,7 +381,7 @@ public void InsertListTestSqlDataRecord(List<CurveData> data)
 
 {% endhighlight %}
 
-The last test case is to pass an XML document to the stored procedure and parse it. To generate the XML content the `WriteXml` methdod of the `DataTable` is used. *(There are faster ways to generate XML files, the test cases focuses on sql execution duration and not the parameter set up.)*
+The last test case is to pass an XML document to the stored procedure and parse it. To generate the XML content the `WriteXml` method of the `DataTable` is used. *(There are faster ways to generate XML files, the test cases focuses on sql execution duration and not the parameter set up.)*
 
 
 {% highlight csharp %}
