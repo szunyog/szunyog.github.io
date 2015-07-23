@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Screen"
-date:   2015-06-02 08:31:49
+date:   2015-06-16 08:31:49
 categories: ["linux"]
 ---
 
@@ -70,6 +70,5 @@ defutf8 on
 nonblock on
 #vbell off
 msgwait 5
-
 {% endhighlight %}
 
