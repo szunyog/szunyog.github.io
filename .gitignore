@@ -2,4 +2,4 @@ _site/*
 *.swp
 .jekyll-metadata
 *.lock
-
+.sass-cache/

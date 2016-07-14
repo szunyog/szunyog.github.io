@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/bin/jekyll serve --host localhost --port 8181 --incremental --drafts

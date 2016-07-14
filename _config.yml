@@ -4,12 +4,29 @@ title: Diary of a Developer
 description: "Diary of a Developer is about Javascript, .NET, SQL, Python."
 baseurl: ""
 url: "http://szunyog.github.io"
+description: >
+    .Net, SQL, Web, Scripts, etc...  
+
 #twitter_username: jekyllrb
 github_username: szunyog
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+#markdown: kramdown
+#permalink: pretty
 
+#gems:
+#  - jekyll-sitemap
+
+permalink: /archivers/:title
 gems:
-  - jekyll-sitemap
+    - jekyll-paginate
+    - jekyll-gist
+    - jemoji
+# Build settings
+paginate: 5
+paginate_path: "page:num"
+highlighter: rouge
+markdown: kramdown
+kramdown:
+iput: GFM
+syntax_highlighter: rouge
