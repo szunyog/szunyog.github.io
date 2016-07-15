@@ -2,13 +2,13 @@
 layout: post
 title:  "Screen"
 date:   2015-06-16 08:31:49
-categories: ["linux"]
+categories: ["Linux"]
 ---
 
 I am using Linux for several years, but just started with Screen. From my personal view, this is a magical tool to:
 
 * use your Linux from remote shell and like using more than one shell;
-* using instable network connection and ssh link randomly closes;
+* using unstable network connection and ssh link randomly closes;
 * leave running processes after your connection is closed;
 
 It is a good chance to have Screen in your Linux distribution's package library so installation is quite simple like:
