@@ -3,9 +3,10 @@ layout: post
 title:  "Angular service vs provider vs factory"
 date:   2016-07-11 08:31:49
 categories: ["js angular"]
+description: The difference between angular service, factory and provider when declaring as an injectable argument.
 ---
 
-The difference between angular service, factory and provider when declaring an
+The difference between angular service, factory and provider when declaring as an
 injectable argument.
 
 Services

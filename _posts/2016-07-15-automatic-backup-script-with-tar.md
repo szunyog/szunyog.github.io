@@ -3,6 +3,7 @@ layout: post
 title:  "Automatic backup with tar"
 date:   2016-07-15 18:31:49
 categories: ["Linux", "Bash"]
+description: Automatic backup script with tar.
 ---
 
 The Internet is full with backup scripts, using tar and create a backup file,

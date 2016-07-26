@@ -4,6 +4,7 @@ title:  "MS SQL - C# insert performance test"
 date:   2015-03-31 20:31:49
 categories: csharp
 tags: [mssql, csharp]
+description: Performance comparison of different kind of data inserting methods with c# and MSSQL.
 ---
 
 ## Introduction

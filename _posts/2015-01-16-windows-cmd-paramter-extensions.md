@@ -4,6 +4,7 @@ title:  "Windows CMD Parameter Extensions"
 date:   2015-01-16 22:31:49
 categories: scripts
 tags: [cmd]
+description: Parameter extensions for windows batch files.
 ---
 
 > Parameters

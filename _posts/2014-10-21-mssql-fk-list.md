@@ -4,6 +4,7 @@ title:  "MS SQL list foreign keys"
 date:   2014-10-21 20:31:49
 categories: sql
 tags: [mssql]
+description: Sample SQL script that lists all foreign keys of an MSSQL database.
 ---
 
 Sometime it is usefull, to list all the foreign keys of a database, the following script does it:

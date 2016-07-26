@@ -3,6 +3,7 @@ layout: post
 title:  "Audit log with entity framework"
 date:   2015-05-22 20:31:49
 categories: ["csharp", "EntityFramework", ".net"]
+description: Audit logging with Entity Framework.
 ---
 
 The EntytyFramework's context has the list of the created, changed, deleted entities, so it

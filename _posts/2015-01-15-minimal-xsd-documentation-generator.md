@@ -4,6 +4,7 @@ title:  "Minimal XSD documentation generator"
 date:   2015-01-15 20:31:49
 categories: xml
 tags: [xml, xsd]
+description: Very simple documentation generator from an XSD file.
 ---
 
 This is a simple XSLT to produce a HTML documentation of an XSD file.

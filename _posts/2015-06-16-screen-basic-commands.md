@@ -3,6 +3,7 @@ layout: post
 title:  "Screen"
 date:   2015-06-16 08:31:49
 categories: ["Linux"]
+description: Screen basic commands.
 ---
 
 I am using Linux for several years, but just started with Screen. From my personal view, this is a magical tool to:

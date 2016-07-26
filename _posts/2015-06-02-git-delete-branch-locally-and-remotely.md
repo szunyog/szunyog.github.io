@@ -3,6 +3,7 @@ layout: post
 title:  "Delete a Git branch both locally and remotely"
 date:   2015-06-02 08:31:49
 categories: ["git"]
+description: Git delete a barnch locally.
 ---
 
 To delete a branch locally:

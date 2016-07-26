@@ -3,6 +3,7 @@ layout: post
 title:  "Git undo a commit and redo"
 date:   2015-05-01 10:31:49
 categories: git
+description: How to undo a git commit.
 ---
 
 When you need to undo your last git commit...

@@ -4,6 +4,7 @@ title:  "WPF TabControl First, Last TabItem Style"
 date:   2015-02-10 20:31:49
 categories: csharp
 tags: [wpf, tabcontrol]
+description: Tricky solution to have rounded tab control headings in WPF.
 ---
 
 Using HTML and CSS is quite easy to apply a custom style to the first or last elements of a container using the ``:first-child`` or ``:last-child`` pseudo elements. But in WPF it is a bit harder, because it does not support anything like that.

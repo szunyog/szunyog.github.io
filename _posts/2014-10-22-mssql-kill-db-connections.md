@@ -4,6 +4,7 @@ title:  "MS SQL kill all other connections by database"
 date:   2014-10-22 20:31:49
 categories: sql
 tags: [mssql]
+description: MSSQL script to kill connections to a database except mine.
 ---
 
 The first trivial solution is to switch the database to single user mode. It can be done by the following command:

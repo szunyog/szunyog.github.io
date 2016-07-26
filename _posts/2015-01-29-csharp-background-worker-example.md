@@ -4,6 +4,7 @@ title:  "C# Background Worker example"
 date:   2015-01-29 20:31:49
 categories: csharp
 tags: [async, backgroundworker]
+description: Yet an other C# BackgroundWorker sample.
 ---
 
 Simple file copy example using BackgroundWorker class.
