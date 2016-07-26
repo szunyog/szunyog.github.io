@@ -23,7 +23,7 @@ gems:
     - jekyll-gist
     - jemoji
 # Build settings
-paginate: 5
+paginate: 10
 paginate_path: "page:num"
 highlighter: rouge
 markdown: kramdown
