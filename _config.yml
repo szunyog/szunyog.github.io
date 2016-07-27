@@ -17,7 +17,7 @@ github_username: szunyog
 #gems:
 #  - jekyll-sitemap
 
-permalink: /archivers/:title
+permalink: /archives/:title
 gems:
     - jekyll-paginate
     - jekyll-gist
