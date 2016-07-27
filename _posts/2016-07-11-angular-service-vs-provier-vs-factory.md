@@ -80,5 +80,5 @@ function MyCtrl($scope, testService, testProvider, testFactory) {
 
 The sample code also can be found on [JSFiddle][jsfiddle].
 
-[jsfiddle]: http://jsfiddle.net/5tbmtaz0/4/
+[jsfiddle]: http://jsfiddle.net/5tbmtaz0/5/
 
