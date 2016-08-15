@@ -22,7 +22,8 @@ gems:
     - jekyll-paginate
     - jekyll-gist
     - jemoji
-    - jekyll-sitemap
+      #    - jekyll-last-modified-at
+      #    - jekyll-sitemap
 
 # Build settings
 paginate: 10
