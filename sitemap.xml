@@ -7,7 +7,7 @@ exclude: 'yes'
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for post in site.posts %}
       <url>
-        <loc>{{ site.production_url }}{{ post.url }}</loc>
+        <loc>{{ site.url }}{{ post.url }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>          
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -16,7 +16,7 @@ exclude: 'yes'
   {% for page in site.pages %}
     {% if page.sitemap != null and page.sitemap != empty %}
       <url>
-        <loc>{{ site.production_url }}{{ page.url }}</loc>
+        <loc>{{ site.url }}{{ page.url }}</loc>
         <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
         <changefreq>{{ page.sitemap.changefreq }}</changefreq>
         <priority>{{ page.sitemap.priority }}</priority>
