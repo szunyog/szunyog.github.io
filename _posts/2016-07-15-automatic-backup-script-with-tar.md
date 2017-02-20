@@ -62,7 +62,7 @@ sudo -u postgres pg_dumpall | gzip > $BACKUPDIR/$BACKUPFILE.postgres.tar.gz
 
 # Remove old backups base on the THRESHOLD variable.
 echo "Removing old backup files."
-find ${BACKUPS_PATH} -maxdepth 1 -type f -print0  | while IFS= read -d '' -r file
+find ${BACKUPDIR} -maxdepth 1 -type f -print0  | while IFS= read -d '' -r file
 do
     ## Does this file name match the pattern (13 digits.*.tar.gz)?
     if [[ "$(basename "$file")" =~ ^[0-9]{12}.*.tar.gz$ ]]
