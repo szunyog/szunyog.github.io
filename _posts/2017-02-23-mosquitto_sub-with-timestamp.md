@@ -18,3 +18,11 @@ executes the date command for each message.
 mosquitto_sub -v -t /# | xargs -d$'\n' -L1 bash -c 'date "+%Y-%m-%d %T.%3N $0"'
 {% endhighlight %}
 
+Update:
+Thanks to Stewart C. Russell, who suggested to use `ts` from `moreutils`
+package, it can be achieved with a shorter expression:
+
+{% highlight bash %}
+mosquitto_sub -v -t /# | ts
+{% endhighlight %}
+
